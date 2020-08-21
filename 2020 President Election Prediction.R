@@ -108,6 +108,8 @@ p4<-ggplot(data, aes(fill=Nominee, y=value, x=specie)) +
   labs(title = "Trump vs Biden in Electoral Vote") +
   geom_hline(yintercept = 270/188,,colour='orange',size = 1) +
   annotate("text", label = "270 to Win", x = 1, y = 298/188, size = 4, colour = "orange") +
+  annotate("text", label = "188", x = 1, y = 480/188, size = 8, colour = "white") +
+  annotate("text", label = "370", x = 1, y = 200/188, size = 8, colour = "white") +
   theme(plot.title = element_text(hjust = 0.5))
 
 
